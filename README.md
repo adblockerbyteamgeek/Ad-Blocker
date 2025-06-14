@@ -1,2 +1,2 @@
-# Ad-Blcker
-Ad-Blcker
+# Ads-Blocker
+Ads-Blocker
