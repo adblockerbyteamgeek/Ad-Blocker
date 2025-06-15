@@ -59,6 +59,7 @@ nav a:hover {
   text-align: center;
   padding: 60px 20px;
   background-color: #eaf3ff;
+  margin-bottom: 20px; /* ✅ Reduced space below hero */
 }
 
 .hero h2 {
@@ -124,7 +125,7 @@ footer {
 
 .personal-story {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px auto 50px; /* ✅ Reduced top margin */
   padding: 30px;
   background: #ffffff;
   border-radius: 10px;
