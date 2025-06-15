@@ -44,8 +44,8 @@
     <p>Choose between the Free or Pro version of our Windows PC app. No browser extension required.</p>
   </section>
 
-  <!-- ✅ Google AdSense Display Ad -->
-  <div style="text-align: center; margin: 40px 0;">
+  <!-- ✅ AdSense container with conditional display -->
+  <div id="adsense-container" style="text-align: center; margin: 40px 0; display: none;">
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-6721936150678970"
@@ -53,7 +53,14 @@
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      window.addEventListener('load', function () {
+        const ad = document.querySelector('.adsbygoogle');
+        const container = document.getElementById('adsense-container');
+        if (ad && ad.innerHTML.trim().length > 0) {
+          container.style.display = 'block';
+        }
+      });
     </script>
   </div>
 
