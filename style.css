@@ -78,6 +78,14 @@ nav a:hover {
   background-color: #0056b3;
 }
 
+/* AdSense containers */
+.adsbygoogle {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  text-align: center;
+}
+
 /* Features section */
 .features {
   padding: 50px 30px;
@@ -144,6 +152,7 @@ footer {
   background-color: #f1f1f1;
   font-size: 14px;
   color: #555;
+  margin-top: 40px;
 }
 
 /* Policy links */
@@ -164,4 +173,20 @@ footer {
 
 .policy-links a:hover {
   text-decoration: underline;
+}
+
+/* Responsive fix for large gaps */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .personal-story {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+
+  .features {
+    padding: 30px 15px;
+  }
 }
