@@ -1,23 +1,13 @@
-body {
+/* Reset and base styling */
+html, body {
   margin: 0;
+  padding: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa;
   color: #333;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
+/* Header */
 header {
   background-color: #ffffff;
   display: flex;
@@ -44,6 +34,7 @@ header {
   color: #2c3e50;
 }
 
+/* Navigation */
 nav a {
   margin: 0 12px;
   color: #007bff;
@@ -55,11 +46,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Hero section */
 .hero {
   text-align: center;
   padding: 60px 20px;
   background-color: #eaf3ff;
-  margin-bottom: 20px; /* ✅ Reduced space below hero */
 }
 
 .hero h2 {
@@ -87,6 +78,7 @@ nav a:hover {
   background-color: #0056b3;
 }
 
+/* Features section */
 .features {
   padding: 50px 30px;
   background-color: #fff;
@@ -115,17 +107,10 @@ nav a:hover {
   margin-top: 0;
 }
 
-footer {
-  text-align: center;
-  padding: 25px;
-  background-color: #f1f1f1;
-  font-size: 14px;
-  color: #555;
-}
-
+/* Personal story section */
 .personal-story {
   max-width: 900px;
-  margin: 20px auto 50px; /* ✅ Reduced top margin */
+  margin: 50px auto;
   padding: 30px;
   background: #ffffff;
   border-radius: 10px;
@@ -152,6 +137,16 @@ footer {
   font-size: 16px;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Policy links */
 .footer-policy {
   display: flex;
   justify-content: flex-end;
